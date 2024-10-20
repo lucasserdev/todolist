@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --font-default: "Montserrat", sans-serif;
+    --txt-default: #3CA259;
+    --color-default: #1C1A3F;
+    --white: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-default);
+}
+
+body {
+    
+    height: 100vh;
+    background-color: #0e0d1f;
+    padding: 20px;
+}
+
+h1 {
+    color: white;
+}
+
+div.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.todo {
+    flex: 1;
+    padding: 10px;
+    background-color: var(--color-default);
+    color: var(--txt-default);
+}
+
+.todo h4 {
+    font-size: 12px;
+    color: #ccc;
+
+    margin-top: 10px;
+    cursor: pointer;
+    width: 150px;
+    transition: background-color 0.2s ease;
+    
+}
+
+
+.todo h4:hover {
+    background-color: azure;
+}
+
+.todo form {
+    margin-top: 10px;
+}
+
+.todo p {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 5px;
+    background-color: #2f2c6b;
+    margin: 5px 0;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo p #icons a {
+    cursor: pointer;
+    color: white;
+}
+
+.todo form .btn_ac {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.todo form textarea {
+    margin-bottom: 5px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.todo form input[type="submit"] {
+    padding: 8px 14px;
+    background-color: var(--txt-default);
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.todo form i {
+    font-size: 20px;
+    cursor: pointer;
+}
